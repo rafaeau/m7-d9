@@ -5,6 +5,11 @@ import DishComments from './DishComments'
 import { Col, Row, Container } from 'react-bootstrap'
 
 const Details = () => {
+
+  interface DetailsState {
+    pasta: string
+  }
+
   const [pasta, setPasta] = useState(undefined)
 
   const params = useParams()
